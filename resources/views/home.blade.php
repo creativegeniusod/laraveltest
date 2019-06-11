@@ -6,14 +6,13 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Upload Image</div>
-
                 <div class="panel-body">
                     {!! Form::open(['id'=>'uploadImage','class'=>'ajax-form','method'=>'POST']) !!}
                         <div class="form-content">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input name="image" type="file" class="custom-file-input form-control" />
+                                        <input name="image" type="file" class="custom-file-input form-control" />                          
                                     </div>
                                 </div>
                             </div>

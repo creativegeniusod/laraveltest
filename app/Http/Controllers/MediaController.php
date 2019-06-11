@@ -36,16 +36,19 @@ class MediaController extends Controller
         /****** image ******/
         if ($request->hasFile('image')) {
           $extension = $request->file('image')->getClientOriginalExtension();
-          $filename = uniqid();
+          $imageName = $request->file('image')->getClientOriginalName();
+          $filename = basename($imageName,".".$extension).'_'.date("Y_m_d").'_output';
           $file = $request->file('image')->move(config('constants.upload_path.attachments'), $filename.".".$extension);
-
           $attachments_path = public_path('user-uploads/attachments/');
           $pdf_path = public_path('user-uploads/pdf/');
+          $originam_path = public_path('user-uploads/original/');
+          $temp_pdf_path = public_path('user-uploads/pdf/');
           $file = $filename.".".$extension;
           $pdf = $filename.'.pdf';
-          $python_script = base_path('media_upload.py');
+          $python_script = base_path('Contours2.py');
+          $tempName = pathinfo($imageName, PATHINFO_FILENAME);          
 
-          $cmd = 'python '.$python_script. ' "'.$attachments_path.$file.'" "'.$file.'" "'.$pdf_path.$pdf.'"';
+          $cmd = 'python '.$python_script. ' "'.$attachments_path.$file.'" "'.$file.'" "'.$pdf_path.$pdf.'" "'.$tempName.'" "'.$originam_path.'" "'.$temp_pdf_path.'"';
 
           $output = shell_exec($cmd);
           if($output) {
