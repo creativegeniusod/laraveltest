@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Media Upload</title>
+    <title>Stripe Payment</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('plugins/froiden-helper/helper.css') }}" rel="stylesheet">
@@ -19,6 +19,7 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css'>
 
     @stack('head-script')
+    <script src="https://js.stripe.com/v3/"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
