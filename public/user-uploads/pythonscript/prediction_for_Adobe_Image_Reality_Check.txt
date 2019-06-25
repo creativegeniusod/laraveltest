@@ -1,0 +1,32 @@
+772,1028
+1335,950
+1254,1179
+578,1238
+1391,1451
+1313,1749
+1281,1875
+1216,1913
+1254,1889
+722,1649
+1406,1608
+1420,1621
+1550,1537
+1491,1730
+1477,1425
+1364,1926
+958,1382
+1401,1362
+652,1318
+2 - Class II (greater than 5.7 degrees)
+3 - Prognathic Mandible (greater than 78.7 degrees)
+2 - Prognathic Maxilla (greater than 83.2 degrees)
+1 - Normal (74.5 degrees plus or minus 6.07)
+2 - Class II Tendency (less than 77.6 degrees)
+3 - Long Face Tendency (less than 0.65)
+2 - Mandible High Angle Tendency (greater than 31.4 degrees)
+3 - Anterior Cross Bite (MW is less than 0mm)
+1 - Skeletal Average (between 24 to 33 degrees)
+2 - Skeletal Open (greater than 28 degrees)
+2 - Vertical Growth (greater than 62 degrees)
+3 - Retrusive (less than -1 mm)
+3 - Retrusive (less than -4 mm)

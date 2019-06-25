@@ -2,6 +2,7 @@
 return [
     'upload_path' => [
         'attachments' => 'user-uploads/attachments/',
-        'pdf' => 'user-uploads/pdf/'
-    ]
-];
+        'pdf' => 'user-uploads/pdf/',
+        'pythonscript' => 'user-uploads/pythonscript/'
+    ],
+]; 

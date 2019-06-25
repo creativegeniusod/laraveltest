@@ -1,0 +1,32 @@
+96,106
+169,106
+155,127
+73,119
+164,158
+152,178
+152,188
+151,191
+151,194
+91,163
+160,164
+160,169
+174,161
+175,174
+165,151
+165,195
+118,137
+162,147
+80,122
+2 - Class II (greater than 5.7 degrees)
+1 - Normal Mandible (between 74.6 to 78.7 degrees)
+2 - Prognathic Maxilla (greater than 83.2 degrees)
+2 - Deep Bite Tendency (greater than 80.5 degrees)
+2 - Class II Tendency (less than 77.6 degrees)
+1 - Normal (ratio between 0.65 and 0.75)
+1 - Normal (between 26.8 to 31.4 degrees)
+3 - Anterior Cross Bite (MW is less than 0mm)
+3 - Skeletal closed (less than 24 degrees)
+1 - Skeletal Average (between 18 to 28 degrees)
+3 - Horizontal Growth (less than 57 degrees)
+1 - Average (between -1 to 3 mm)
+1 - Average (between -4 mm to 1 mm)
