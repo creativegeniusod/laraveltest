@@ -31,6 +31,7 @@
 @push('footer-script')
   <script>
       $('#save-form').click(function () {
+        $(".serverResponce").remove();
           $.easyAjax({
               url: '{{route('media.upload_image')}}',
               type: "POST",
@@ -44,6 +45,8 @@
                       console.log(response);
                       $('#download_pdf').show();
                       $('#download_pdf').attr("href", response.pdf_file); // Set herf value
+                  }else{                     
+                    $('input[type=file]').after('<div class="help-block serverResponce">'+response.msg+'</div>');                    
                   }
               }
           })

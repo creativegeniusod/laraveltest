@@ -53,9 +53,16 @@ class MediaController extends Controller
           $cmd = 'python3 '.$python_script. ' "'.$file.'" "'.$dateFormat.'"  "'.$tempName.'"';
           $output = shell_exec($cmd);
           if($output) {
-              $pdf_file = config('constants.upload_path.pythonscript').$pdf;
-              return Reply::dataOnly(['status' => 'success',
+              $output=explode('***', $output);
+              if(!empty($output[1])){
+                $pdf_file = config('constants.upload_path.pythonscript').$pdf;
+                return Reply::dataOnly(['status' => 'error',
+                  'msg' => $output[1]]);
+              }else{ 
+                $pdf_file = config('constants.upload_path.pythonscript').$pdf;
+                return Reply::dataOnly(['status' => 'success',
                   'file' => $file, 'pdf_file' => $pdf_file]);
+              }
           }
         }
     }

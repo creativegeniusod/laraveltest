@@ -1,0 +1,32 @@
+89,100
+162,99
+142,135
+61,116
+149,151
+160,178
+151,190
+152,199
+157,197
+82,175
+163,163
+151,176
+162,159
+175,168
+161,140
+168,197
+111,137
+161,142
+70,135
+3 - Class III (less than 3.2 degrees)
+3 - Prognathic Mandible (greater than 78.7 degrees)
+3 - Retrognathic Maxilla (less than 79.4 degrees)
+3 - Open Bite Tendency (less than 68.4 degrees)
+3 - Class III Tendency (greater than 85.2 degrees)
+1 - Normal (ratio between 0.65 and 0.75)
+3 - Mandible Lower Angle Tendency (less than 26.8 degrees)
+3 - Anterior Cross Bite (MW is less than 0mm)
+3 - Skeletal closed (less than 24 degrees)
+3 - Skeletal closed (less than 18 degrees)
+3 - Horizontal Growth (less than 57 degrees)
+1 - Average (between -1 to 3 mm)
+2 - Protrusive (greater than 1 mm)

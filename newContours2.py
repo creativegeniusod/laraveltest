@@ -7,9 +7,9 @@
 # - xray image for the patient
 # - box plot stats
 # - pdf template file
-import os
+#import os
 import sys
-data_path = "/var/www/html/newfilelaravel/laraveltest/public/user-uploads/pythonscript/"
+data_path = "/var/www/html/ab/laraveltest/public/user-uploads/pythonscript/"
 
 import pandas as pd, numpy as np
 
@@ -68,10 +68,10 @@ reality_generator.reset()
 preds = model.predict_generator(reality_generator, steps = STEP_SIZE_TEST, verbose=1)
 
 # In[9]:
- 
-#if preds[0][0] > 0.5:
-#    print("The current image %s is not recognisable. Please upload a cephalometry image" % (data_path+xray_file))
-#    sys.exit()
+import sys
+if preds[0][0] > 0.5:
+    print("*** The current image %s is not recognisable. Please upload a cephalometry image" % (data_path+xray_file))
+    sys.exit()
 
 keras.backend.clear_session()
 
@@ -1062,4 +1062,3 @@ outputStream = open(data_path + formatted_output, "wb")
 status=output.write(outputStream)
 print(status)
 #outputStream.close()
-
