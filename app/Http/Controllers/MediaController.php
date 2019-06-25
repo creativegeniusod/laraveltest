@@ -52,8 +52,8 @@ class MediaController extends Controller
           //$tempName = str_replace(' ', '', $tempName);         
           $cmd = 'python3 '.$python_script. ' "'.$file.'" "'.$dateFormat.'"  "'.$tempName.'"';
           $output = shell_exec($cmd);
-          if($output) {
-              $output=explode('***', $output);
+          if($output) {           
+              $output=explode('***', $output);               
               if(!empty($output[1])){
                 $pdf_file = config('constants.upload_path.pythonscript').$pdf;
                 return Reply::dataOnly(['status' => 'error',

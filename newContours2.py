@@ -7,7 +7,7 @@
 # - xray image for the patient
 # - box plot stats
 # - pdf template file
-#import os
+import os
 import sys
 data_path = "/var/www/html/ab/laraveltest/public/user-uploads/pythonscript/"
 
@@ -68,7 +68,7 @@ reality_generator.reset()
 preds = model.predict_generator(reality_generator, steps = STEP_SIZE_TEST, verbose=1)
 
 # In[9]:
-import sys
+#import sys
 if preds[0][0] > 0.5:
     print("*** The current image %s is not recognisable. Please upload a cephalometry image" % (data_path+xray_file))
     sys.exit()
